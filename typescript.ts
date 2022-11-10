@@ -1,5 +1,5 @@
 function debug(message: any): void {
-    console.log( message)
+    //console.log( message)
     // no return here
 }
 debug(222)
@@ -56,3 +56,20 @@ debug("OMG No return")
 let chosenFruit: string = getFruit(0)
 
 debug(` you choose an ${getFruit(0)}`)
+
+
+interface teacher {
+    name: string,
+    years: number,
+    subject: string[],
+    age: number
+}
+
+let damian: teacher = {
+    name: "damian",
+    years: 20,
+    subject: ["javascript", "typescript"],
+    age: 49
+}
+
+console.log(damian)
